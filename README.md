@@ -14,11 +14,21 @@ In this lab, you will be inserting, altering, and removing DOM nodes. You will
 be doing the following:
 
 1. Ask the DOM to find an HTML element or elements in the rendered page
+
+document.querySelector()
+
 2. Remove or insert the selected element(s) and / or
+
 3. Adjust a property of the selected element(s)
 
+
 You've come to understand the DOM and have powerful tools for selecting the
-right elements. You now want to understand creating new nodes, deleting nodes,
+right elements.
+
+ You now want to understand creating new nodes, deleting nodes,
+
+
+
 and updating nodes' properties.
 
 ## Create DOM Elements Programmatically
@@ -26,6 +36,7 @@ and updating nodes' properties.
 ### `document.createElement()`
 
 Creating an element in JavaScript is an easy process. Simply call
+
 `document.createElement('tagName')`, where `tagName` is the name of any valid HTML
 tag (e.g., `'p'`, `'div'`, `'span'`, etc.).
 
@@ -57,6 +68,7 @@ document.body.appendChild(element)
 We can continue to update `element`, since we have a reference to it:
 
 ``` javascript
+
 let ul = document.createElement('ul')
 
 for (let i = 0; i < 3; i++) {
@@ -66,6 +78,7 @@ for (let i = 0; i < 3; i++) {
 }
 
 element.appendChild(ul)
+
 ```
 
 ## Add Elements to the DOM via `innerHTML`
